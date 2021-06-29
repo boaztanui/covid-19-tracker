@@ -68,11 +68,11 @@ function App() {
         {/** Title + select input dropdown*/}
 
         <div className="app__stats">
-          <InfoBox title="Coronavirus Cases" cases={1234} total={2000} />
+          <InfoBox title="Coronavirus Cases" cases={countryInfo.todayCases} total={countryInfo.cases} />
 
-          <InfoBox title="Recovered" cases={1234} total={3000} />
+          <InfoBox title="Recovered" cases={countryInfo.todayRecovered} total={countryInfo.recovered} />
 
-          <InfoBox title="Deaths" cases={1234} total={4000} />
+          <InfoBox title="Deaths" cases={countryInfo.todayDeaths} total={countryInfo.deaths} />
         </div>
 
         <Map />
