@@ -19,7 +19,7 @@ function InfoBox({ title, cases, total }) {
                 </CardContent>
             </Card>
         </div >
-    )
+    );
 }
 
 export default InfoBox;
